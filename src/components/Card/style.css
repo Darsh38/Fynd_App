@@ -1,0 +1,52 @@
+.ImageView{
+  border-color: #282c34;
+  border-width: 1px;
+  border-style: solid;
+  padding: 20px 0px;
+  padding-top: 0px;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ImageView img {
+  min-height: 100px;
+  min-width: 200px;
+  margin-top: 20px;
+  align-self: center;
+}
+
+.ImageView:hover {
+  opacity: 0.2;
+}
+
+.ImageView .ImageView--on,
+.ImageView:hover .ImageView--off {
+  display: none;
+}
+
+.ImageView:hover .ImageView--on {
+  display: flex;
+  opacity: 1;
+}
+
+.ImageView--on .edit {
+  opacity: 1;
+  color: black;
+  font-size: 16px;
+}
+
+
+.delete {
+  align-self: flex-end;
+  color: red;
+  opacity: 1 !important;
+  z-index: 5;
+}
+
+.edit{ 
+  align-self: center;
+  bottom: 400px;
+  position: absolute;
+  z-index: 5;
+}
